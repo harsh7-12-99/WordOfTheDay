@@ -1,0 +1,156 @@
+.form {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    backface-visibility: hidden;
+
+}
+
+.back {
+
+    bottom: 50vh;
+    transform: rotateY(180deg);
+}
+
+.left,
+.right {
+    position: relative;
+    height: inherit;
+    width: 50%;
+}
+
+.left {
+    background-color: rgb(231, 133, 133);
+}
+
+.right {
+    background-color: rgb(42, 55, 55);
+    bottom: 50vh;
+    left: 25vw;
+
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.hoverBtn {
+    width: 180px;
+    height: 60px;
+    align-self: center;
+    position: absolute;
+    top: 68%;
+    left: 25%;
+}
+
+.queDiv {
+    position: relative;
+    top: 10%;
+    align-self: center;
+    background-color: rgb(254, 251, 251);
+    height: 50%;
+    width: inherit;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.centerText {
+    position: relative;
+    top: 25%;
+    padding: 0% 2.5%;
+}
+
+.span {
+    position: absolute;
+    text-align: center;
+    background-color: #7ab570;
+
+    border-color: rgb(215, 140, 140);
+    box-shadow: 2px;
+    font-size: 27.5px;
+    font-weight: bold;
+    border-style: inset;
+    left: 10%;
+    right: 10%;
+    top: 65%;
+    padding: 1%;
+}
+
+.revRusDiv {
+    height: 47%;
+    width: inherit;
+    background-color: #4F95DA;
+    position: absolute;
+    top: 10%;
+}
+
+.front-left {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.5s ease-in;
+
+}
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: aquamarine;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+}

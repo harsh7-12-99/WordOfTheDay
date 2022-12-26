@@ -1,0 +1,8 @@
+.btnPosition {
+    width: 180px;
+    height: 60px;
+    align-self: center;
+    position: absolute;
+    top: 115%;
+    left: 50%;
+}
